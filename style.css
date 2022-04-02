@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    background-color: rgb(251, 180, 251);
+    font-family: 'Pacifico', cursive;
+}
+.text-white{
+    color: white;
+}
+.border-round{
+    border-radius: 100%;
+}
+.photo{
+	width: 300px;
+	height: 300px;
+}
+.photokvadrat{
+	width: 40px;
+	height: 40px;
+}
+.border {
+    border-style: solid;
+    border-color: red;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.cardBox{
+    padding: 0 20%;
+}
+.menu{
+    display: none;
+    right: 30px;
+    position: absolute;
+}
+
+@media (min-width: 900px) {
+    .menu{
+        display: block;
+    }
+}
+.menuLink{
+    color: #262626;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0 15px;
+}
+.menuLink:hover{
+    color: #fff;
+    background-color: #262626;
+    border-radius: 15px;
+}
+.logo{
+    color: #262626;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+}
+.header{
+    padding: 15px;
+    /* Домашка: Изменить размеры и цвет */
+    box-shadow: 5px 5px 20px 2px rgb(155, 39, 155);
+}
+.centered{
+    justify-content: center;
+    align-content: center;
+}
+.w-half{
+    width: 50%; 
+    /* От родителя, а не от экрана */
+}
+.w-full{
+    width: 100%; 
+    /* От родителя, а не от экрана */
+}
+.text-center{
+    text-align: center;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-500{
+    margin-bottom: 500px !important;
+}
+.p-15{
+    padding: 15px;
+}
+.ps-100{
+    padding: 15px 20% 15px 20%;
+}
+.bg-dark{
+    background-color: #262626;
+}
+.grid{
+    /* Вопрос 1: Что здесь происходит?  */
+    display: grid;
+    /* Вопрос 1: Что здесь происходит?  */
+    grid-template-columns: 1fr 6fr 1fr;
+    /* Вопрос 1: Что здесь происходит?  */
+    grid-template-rows: auto;
+    /* Вопрос 1: Что здесь происходит?  */
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.kvadrat{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* Вопрос 2: Что здесь происходит?  */
+    position: absolute;
+}
+
+.postBox{
+    max-width: 80%;
+}
+.authorLine{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+.postSection{
+    display: grid;
+    grid-template-columns: 1fr 30fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+@media (min-width: 900px) {
+    .postSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+}
